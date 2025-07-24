@@ -34,6 +34,31 @@ function gregorianToGps(dateStr) {
   return { gpsWeek, gpsDay };
 }
 
+// === Section Navigation Toggle ===
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".content-section");
+  const navLinks = document.querySelectorAll("nav a[href^='#']");
+
+  function showSection(id) {
+    sections.forEach(sec => {
+      sec.style.display = (sec.id === id) ? "block" : "none";
+    });
+  }
+
+  // Initially show only home
+  showSection("home");
+
+  // Add click events to nav links
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").replace("#", "");
+      showSection(targetId);
+    });
+  });
+});
+
+
 // Populate the form inputs dynamically based on selection
 document.addEventListener('DOMContentLoaded', function () {
   const conversionTypeSelect = document.getElementById("conversionType");
