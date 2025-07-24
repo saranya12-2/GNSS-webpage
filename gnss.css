@@ -155,7 +155,7 @@ footer {
 }
 
 .team-member {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(58, 44, 44, 0.323);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -171,5 +171,77 @@ footer {
   margin-bottom: 10px;
 }
 
+#home .carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content-section,
+.content-section * {
+  color: white !important;
+}
+
+#ismr-converter-section {
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+}
+#ismr-converter-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+}
 
 
+.contact-form {
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: auto;
+  max-width: 90%;
+}
+
+.contact-form h3 {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 40px;
+  max-height: 80px;
+}
+
+.contact-form button {
+  background: #004080;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0066cc;
+}
