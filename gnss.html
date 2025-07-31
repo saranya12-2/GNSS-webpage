@@ -187,30 +187,21 @@
     </form>
     <p id="resultOutput" style="font-weight: bold; margin-top: 15px;"></p>
   </section>
-  
-  <section id="gps-converter-section">
-  <h2 style="text-align: center;">ISMR to Excel Converter</h2>
-  <div style="text-align: center; margin: 20px;">
-    <a href="https://ismr-to-excel-ugdxfpjmrteo5wmhjvmejp.streamlit.app/" target="_blank">
-      <button style="padding: 12px 24px; font-size: 16px; background-color: #004c97; color: white; border: none; border-radius: 8px;">
-        Open Converter Tool
-      </button>
-    </a>
-  </div>
-</section>
-
 
 
 <footer>
-  <div class="contact-form">
-    <h3>Have questions or feedback?</h3>
-    <form action="send-mail.php" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message..." required></textarea>
+  <div id="feedback-container">
+  <button id="feedback-toggle">Feedback</button>
+  <div id="feedback-form" style="display: none;">
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." required></textarea>
       <button type="submit">Send</button>
     </form>
   </div>
+</div>
+
   <p>&copy; 2025 GNSS TDC. All rights reserved.</p>
 </footer>
 
