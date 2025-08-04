@@ -115,3 +115,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// === Feedback Floating Button Scroll Logic ===
+window.addEventListener("scroll", function () {
+  const feedbackContainer = document.getElementById("feedback-container");
+  if (!feedbackContainer) return;
+
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const pageHeight = document.documentElement.scrollHeight;
+
+  // Show when user nears bottom
+  if (scrollTop + windowHeight >= pageHeight * 0.8) {
+    feedbackContainer.style.display = "block";
+  } else {
+    feedbackContainer.style.display = "none";
+  }
+});
+
+// === Feedback Toggle Show/Hide ===
+document.addEventListener("DOMContentLoaded", function () {
+  const feedbackToggle = document.getElementById("feedback-toggle");
+  const feedbackForm = document.getElementById("feedback-form");
+
+  if (feedbackToggle && feedbackForm) {
+    feedbackToggle.addEventListener("click", () => {
+      const isVisible = feedbackForm.style.display === "block";
+      feedbackForm.style.display = isVisible ? "none" : "block";
+    });
+  }
+});
+  
