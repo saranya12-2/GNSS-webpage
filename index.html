@@ -202,15 +202,18 @@
 
 
 <footer>
-  <div class="contact-form">
-    <h3>Have questions or feedback?</h3>
-    <form action="send-mail.php" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message..." required></textarea>
+  <div id="feedback-container">
+  <button id="feedback-toggle">Feedback</button>
+  <div id="feedback-form" style="display: none;">
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." required></textarea>
       <button type="submit">Send</button>
     </form>
   </div>
+</div>
+  
   <p>&copy; 2025 GNSS TDC. All rights reserved.</p>
 </footer>
 
@@ -220,3 +223,4 @@
 
 </body>
 </html>
+
