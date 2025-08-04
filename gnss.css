@@ -245,3 +245,37 @@ footer {
 .contact-form button:hover {
   background: #0066cc;
 }
+#feedback-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+#feedback-toggle {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#feedback-form {
+  margin-top: 10px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+
