@@ -245,37 +245,76 @@ footer {
 .contact-form button:hover {
   background: #0066cc;
 }
+/* Floating Feedback Container */
+/* Floating Feedback Container */
 #feedback-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+}
+
+/* Feedback Box */
+#feedback-box {
   display: none;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Transparent background */
+  padding: 20px;
+  width: 300px;
   border-radius: 12px;
-}
-
-#feedback-toggle {
-  background-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-#feedback-form {
+/* Feedback Toggle Button */
+#feedback-toggle {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+#feedback-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Inputs */
+#feedback-box input,
+#feedback-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Buttons inside feedback */
+#send-feedback {
+  background: #28a745;
+  color: white;
   margin-top: 10px;
 }
 
-#feedback-form input,
-#feedback-form textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 6px;
-  border-radius: 6px;
-  border: none;
+#cancel-feedback {
+  background: #dc3545;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
+
+#home .carousel-inner img {
+  width: 100%;
+  height: 60vh; /* Adjust as needed */
+  object-fit: contain; /* Keep full image, no cropping */
+  background: transparent; /* Remove black bars */
+  border-radius: 10px;
+}
 
