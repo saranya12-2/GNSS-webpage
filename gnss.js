@@ -133,16 +133,23 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// === Feedback Toggle Show/Hide ===
+// === Feedback Toggle with Cancel Button ===
 document.addEventListener("DOMContentLoaded", function () {
   const feedbackToggle = document.getElementById("feedback-toggle");
-  const feedbackForm = document.getElementById("feedback-form");
+  const feedbackBox = document.getElementById("feedback-box");
+  const cancelFeedback = document.getElementById("cancel-feedback");
 
-  if (feedbackToggle && feedbackForm) {
+  if (feedbackToggle && feedbackBox && cancelFeedback) {
     feedbackToggle.addEventListener("click", () => {
-      const isVisible = feedbackForm.style.display === "block";
-      feedbackForm.style.display = isVisible ? "none" : "block";
+      feedbackBox.style.display = "block";
+      feedbackToggle.style.display = "none";
+    });
+
+    cancelFeedback.addEventListener("click", () => {
+      feedbackBox.style.display = "none";
+      feedbackToggle.style.display = "inline-block";
     });
   }
 });
+
   
