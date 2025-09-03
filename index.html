@@ -57,13 +57,13 @@
   <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+        <img src="/images/slide1.jpg" class="d-block w-100" alt="Slide 1">
       </div>
       <div class="carousel-item">
-        <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+        <img src="/images/slide2.jpg" class="d-block w-100" alt="Slide 2">
       </div>
       <div class="carousel-item">
-        <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+        <img src="/images/slide3.jpg" class="d-block w-100" alt="Slide 3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
@@ -193,19 +193,23 @@
     <p id="resultOutput" style="font-weight: bold; margin-top: 15px;"></p>
   </section>
   
-<footer>
-  <div id="feedback-container">
-  <button id="feedback-toggle">Feedback</button>
-  <div id="feedback-form" style="display: none;">
-    <form id="feedbackForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
+<!-- Floating Feedback Button & Box -->
+<div id="feedback-container">
+  <button id="feedback-toggle" class="btn btn-primary">Feedback</button>
+
+  <div id="feedback-box">
+    <h5>Feedback</h5>
+    <input type="text" class="form-control mb-2" placeholder="Your Name">
+    <input type="email" class="form-control mb-2" placeholder="Your Email">
+    <textarea class="form-control mb-2" placeholder="Your Message..."></textarea>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-secondary" id="cancel-feedback">Cancel</button>
+      <button class="btn btn-success">Send</button>
+    </div>
   </div>
 </div>
-  
+
+  <footer>
   <p>&copy; 2025 GNSS TDC. All rights reserved.</p>
 </footer>
 
@@ -215,6 +219,5 @@
 
 </body>
 </html>
-
 
 
